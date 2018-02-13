@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Playlist | Powered by Soundcloud Visualizer</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="visualizer"></div>
+
+<div id="controlPanel" class="hidden">
+    <div id="tab"><a href="#" id="toggleButton"><i class="icon-menu"></i></a></div>
+    <div id="trackInfoPanel" class="hidden">
+        <img id="infoImage" src="">
+        <div id="infoArtist"></div>
+        <div id="infoTrack"></div>
+    </div>
+    <div id="playerControls">
+        <form id="form">
+            <input type="url" id="input" placeholder="Paste Soundcloud URL here (https://soundcloud.com/artist/track)" pattern="^https?://soundcloud\.com/[^/]+/(sets/)?[^/]+$" autofocus required>
+            <button type="submit" id="submit"><i class="icon-play"></i></button><br>
+        </form>
+        <audio id="player" controls autoplay preload autobuffer></audio>
+    </div>
+</div>
+
+
+
+<script src="js/sdk.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>
